@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUPCH.Application", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUPCH.Domain", "PruebaUPCH.Domain\PruebaUPCH.Domain.csproj", "{1981153C-AF21-484E-AEAD-825B53736AC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUPCH.Infrastructure", "Infrastructure\PruebaUPCH.Infrastructure.csproj", "{226EA0BD-51D1-4017-B2CF-F35AFB9C8C58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUPCH.Infrastructure", "PruebaUPCH.Infrastructure\PruebaUPCH.Infrastructure.csproj", "{226EA0BD-51D1-4017-B2CF-F35AFB9C8C58}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0FAC685B-23C9-45B1-9A29-2290800E2F95}"
 EndProject
