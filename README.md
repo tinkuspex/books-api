@@ -5,8 +5,8 @@ API REST para CRUD de libros. Implementada en .NET 8, Dapper y SQL Server (Store
 ## Contenido del repositorio
 
 - `/` - código fuente (Api, Application, Domain, Infrastructure)
-- `/scripts/sql-server` - scripts SQL: creación de base, tablas y stored procedures
-- `/postman` - colección Postman para probar la API (cambiar la variable baseUrl en caso de levantar en un puerto distinto)
+- `/PruebaUPCH.Api/scripts/sql-server` - scripts SQL: creación de base, tablas y stored procedures
+- `/PruebaUPCH.Api/postman` - colección Postman para probar la API (cambiar la variable baseUrl en caso de levantar en un puerto distinto)
 
 ## Requisitos
 
@@ -19,6 +19,7 @@ API REST para CRUD de libros. Implementada en .NET 8, Dapper y SQL Server (Store
 1. Clona el repositorio:
 `bash`
 git clone https://github.com/tinkuspex/books-api.git
+cd books-api
 
 2.	Crear la base de datos y ejecutar scripts SQL:
 - Abre scripts/sql-server/lybrarydb.sql y ejecuta en tu SQL Server.

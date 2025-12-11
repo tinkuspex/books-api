@@ -1,0 +1,103 @@
+{
+  "info": {
+    "name": "Book API Collection",
+    "_postman_id": "8f7e5b01-3e30-4b8c-8ccd-bbb000111222",
+    "description": "Colección de pruebas para la API de libros.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Book",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/books",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "books"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Clean Code\",\n  \"author\": \"Robert C. Martin\",\n  \"publicationYear\": 2008,\n  \"pageCount\": 464\n}"
+        }
+      }
+    },
+    {
+      "name": "Create Book - Validation Error",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/books",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "books"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Book Without Year\",\n  \"author\": \"Anonymous\",\n  \"pageCount\": 100\n}"
+        }
+      }
+    },
+    {
+      "name": "Get Books",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/books",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "books"]
+        }
+      }
+    },
+    {
+      "name": "Get Book By Id",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/books/1",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "books", "1"]
+        }
+      }
+    },
+    {
+      "name": "Update Book (ID en el Body)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/books",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "books"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"title\": \"Clean Code Updated\",\n  \"author\": \"Robert C. Martin\",\n  \"publicationYear\": 2009,\n  \"pageCount\": 500\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Book",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "{{baseUrl}}/api/books/1",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "books", "1"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:44353"
+    }
+  ]
+}
