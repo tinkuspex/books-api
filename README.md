@@ -25,6 +25,7 @@ git clone https://github.com/tinkuspex/books-api.git
 - Ejecuta create database y table. Y luego los stored procedures (SpBooks_*.).
 
 3.	Configura connection string 
+- Abre el appsettings.json
 - Edita ConnectionStrings:Conexion con la cadena a tu SQL Server.
 
 4. Restaurar dependencias y ejecutar:
