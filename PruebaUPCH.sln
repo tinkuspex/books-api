@@ -11,6 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUPCH.Domain", "Prueba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUPCH.Infrastructure", "Infrastructure\PruebaUPCH.Infrastructure.csproj", "{226EA0BD-51D1-4017-B2CF-F35AFB9C8C58}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0FAC685B-23C9-45B1-9A29-2290800E2F95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql-server", "sql-server", "{A2BE67FD-CB70-445B-9E56-6929497FD858}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\USER\Documents\SQL Server Management Studio\lybrarydb.sql = C:\Users\USER\Documents\SQL Server Management Studio\lybrarydb.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{FCF72411-AA3A-4E70-934A-DFF34CB354A6}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\USER\Documents\BooksAPI.postman_collection.json = C:\Users\USER\Documents\BooksAPI.postman_collection.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +48,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2BE67FD-CB70-445B-9E56-6929497FD858} = {0FAC685B-23C9-45B1-9A29-2290800E2F95}
 	EndGlobalSection
 EndGlobal
