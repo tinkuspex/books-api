@@ -6,6 +6,7 @@ using PruebaUPCH.Application.Validation;
 using PruebaUPCH.Infrastructure.Database;
 using PruebaUPCH.Infrastructure.Repositories;
 
+
 namespace PruebaUPCH.Api.Extension
 {
     public static class DependencyInjection

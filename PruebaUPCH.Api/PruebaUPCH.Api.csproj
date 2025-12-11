@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\PruebaUPCH.Infrastructure.csproj" />
     <ProjectReference Include="..\PruebaUPCH.Application\PruebaUPCH.Application.csproj" />
+    <ProjectReference Include="..\PruebaUPCH.Infrastructure\PruebaUPCH.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
